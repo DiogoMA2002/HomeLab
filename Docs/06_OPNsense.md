@@ -102,6 +102,29 @@ performed afterwards, as recorded below; wizard completion alone was not install
   A copy on persistent storage outside the Ubuntu live session is not yet
   confirmed. Disk installation subsequently completed as described below.
 
+## Deferred System DNS Configuration
+
+> [!warning] Not yet applied or verified
+> This is a requested configuration baseline for the future Enterprise Security
+> Lab. VM 102 remains powered off; this entry does not confirm a configuration
+> change or DNS validation.
+
+In **System > Settings > General**, use the following values when the lab work
+resumes:
+
+| Setting | Required value |
+|---|---|
+| Prefer IPv4 over IPv6 | Enabled |
+| DNS Server 1 | `1.1.1.1` |
+| DNS Server 2 | `1.0.0.1` |
+| Allow DNS server list to be overridden by DHCP/PPP on WAN | Disabled (unchecked) |
+| Do not use the local DNS service as a nameserver for this system | Enabled |
+
+After saving, verify that the configured DNS servers are retained and that
+system DNS resolution works without accepting DNS servers from the WAN DHCP
+lease. This is separate from the existing Unbound/Dnsmasq and client-DNS
+configuration; do not mark it complete until it is applied and tested.
+
 ### Disk Installation and First Boot Confirmed
 
 - Started `opnsense-installer` from the root console shell.

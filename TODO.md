@@ -54,6 +54,7 @@ The isolated OPNsense LAN is reserved for the separate **Enterprise Security Lab
 The following work is intentionally outside this project's scope and will be planned and documented in a separate vault or repository:
 
 - [ ] Private OPNsense LAN configuration, IPv6 policy, management rules, VPN and IDS/IPS
+  - [ ] Apply and verify the deferred system DNS baseline: prefer IPv4, use `1.1.1.1` and `1.0.0.1`, reject WAN DHCP/PPP DNS override, and do not use the local DNS service as a system nameserver.
 - [ ] Windows Server, Active Directory, DNS, Group Policy and Windows client
 - [ ] Kali Linux and attack simulations
 - [ ] security monitoring, Sysmon, Sigma rules, Zeek, Suricata and vulnerability scanning

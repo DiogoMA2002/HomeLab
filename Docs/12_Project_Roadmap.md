@@ -36,6 +36,7 @@ status: active
 ## Deferred — Enterprise Security Lab (Separate Project)
 
 - OPNsense private-LAN expansion, IPv6 policy, management rules, VPN and IDS/IPS
+- Apply and verify the OPNsense system DNS baseline (`1.1.1.1`, `1.0.0.1`, IPv4 preference, no WAN DNS override and no local DNS service as the system nameserver)
 - Managed switching, second NIC, VLANs and inter-VLAN routing
 - Active Directory, Windows clients, CA/PKI, WSUS and file services
 - security monitoring, Sysmon, Sigma, Suricata, Zeek, OpenVAS and attack simulations

@@ -38,6 +38,26 @@ Use this note to record every major change, install, configuration decision, and
 
 ## Entries
 
+## 2026-11-11 - Deferred OPNsense system DNS baseline recorded
+
+### Change
+
+- Recorded the requested OPNsense **System > Settings > General** DNS baseline:
+  prefer IPv4; use `1.1.1.1` and `1.0.0.1`; disable WAN DHCP/PPP DNS override;
+  and prevent the local DNS service from being used as the system nameserver.
+
+### Result
+
+- The baseline is documented for the future Enterprise Security Lab only.
+  VM 102 remains powered off, so these settings have not been applied or
+  validated.
+
+### Related Notes
+
+- [OPNsense](06_OPNsense.md)
+- [TODO](../TODO.md)
+- [Project Roadmap](12_Project_Roadmap.md)
+
 ## 2026-11-09 - Documentation scope cleanup
 
 ### Change

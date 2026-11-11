@@ -10,6 +10,22 @@ status: active
 
 All notable documentation and infrastructure changes should be recorded here.
 
+## 2026-11-11
+
+### Added
+
+- Recorded the deferred OPNsense system DNS baseline for the future Enterprise
+  Security Lab: IPv4 preference, Cloudflare DNS servers `1.1.1.1` and
+  `1.0.0.1`, no WAN DHCP/PPP DNS override, and no local DNS service as the
+  system nameserver. This is documentation only; the powered-off VM 102 was not
+  changed or validated.
+
+### Related Notes
+
+- [OPNsense](Docs/06_OPNsense.md)
+- [TODO](TODO.md)
+- [Project Roadmap](Docs/12_Project_Roadmap.md)
+
 ## 2026-11-09
 
 ### Changed
